@@ -10,6 +10,7 @@ namespace rogueLike
     {
         static void Main(string[] args)
         {
+            // here are some comments to test powershell git
         }
     }
 }
