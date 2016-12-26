@@ -15,13 +15,19 @@ namespace RogueTests
         {
             Assert.True(true);
         }
+
+        [Fact]
+        public void BoardGeneratedWithCorrectDimensions()
+        {
+            // Arrange & Act
+            var board = new Board(/*5, 5*/);
+
+            // Assert
+            Assert.Equal(5, board.Cells.Length);
+            Assert.Equal(5, board.Cells[0].Length);
+        }
+
+
     }
 
-    class Car
-    {
-        public string Color { get; set; }
-        public int Year { get; set; }
-        public string Make { get; set; }
-
-    }
 }
